@@ -5,13 +5,15 @@ public abstract class Instrument {
     private String brand;
     private String model;
     private String colour;
-    private Integer price;
+    private Double wholesalePrice;
+    private Double salePrice;
 
-    public Instrument(String brand, String model, String colour, Integer price) {
+    public Instrument(String brand, String model, String colour, Double wholesalePrice, Double salePrice) {
         this.brand = brand;
         this.model = model;
         this.colour = colour;
-        this.price = price;
+        this.wholesalePrice = wholesalePrice;
+        this.salePrice = salePrice;
     }
 
     public String getBrand() {
@@ -38,11 +40,19 @@ public abstract class Instrument {
         this.colour = colour;
     }
 
-    public Integer getPrice() {
-        return price;
+    public Double getWholesalePrice() {
+        return wholesalePrice;
     }
 
-    public void setPrice(Integer price) {
-        this.price = price;
+    public void setWholesalePrice(Double wholesalePrice) {
+        this.wholesalePrice = wholesalePrice;
+    }
+
+    public Double getSalePrice() {
+        return salePrice;
+    }
+
+    public void setSalePrice(Double salePrice) {
+        this.salePrice = salePrice;
     }
 }

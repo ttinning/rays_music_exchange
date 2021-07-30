@@ -10,7 +10,7 @@ public class SaxophoneTest {
 
     @Before
     public void before() {
-    saxophone = new Saxophone("Selmer", "SA80/11", "Gold", 20490);
+    saxophone = new Saxophone("Selmer", "SA80/11", "Gold",10490.00, 20490.00);
     }
 
     @Test
@@ -30,7 +30,7 @@ public class SaxophoneTest {
 
     @Test
     public void hasPrice() {
-        assertEquals(20490, saxophone.getPrice(), 0.01);
+        assertEquals(10490.00, saxophone.getWholesalePrice(), 0.01);
     }
 
     @Test

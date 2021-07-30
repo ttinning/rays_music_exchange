@@ -10,7 +10,7 @@ public class PianoTest {
 
     @Before
     public void before() {
-        piano = new Piano("Steinway & Sons", "B-211", "Black", "Grand Piano", 120000);
+        piano = new Piano("Steinway & Sons", "B-211", "Black", "Grand Piano",20000.00, 120000.00);
     }
 
     @Test
@@ -35,7 +35,7 @@ public class PianoTest {
 
     @Test
     public void hasPrice() {
-        assertEquals(120000, piano.getPrice(), 0.01);
+        assertEquals(20000.00, piano.getWholesalePrice(), 0.01);
     }
 
     @Test

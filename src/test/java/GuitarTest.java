@@ -12,9 +12,9 @@ public class GuitarTest {
 
     @Before
     public void before() {
-        guitar = new Guitar("Fender", "Parallel Universe II Telecaster", "Magico Trans Surf Green", "Right Hand", 6, 1800);
-        bassGuitar = new Guitar("Fender", "Player Jazz Bass", "Buttercream", "Left Hand", 4, 690);
-        guitar1 = new Guitar("Strandberg", "Boden Metal 8", "Black Pearl", "Right Hand", 8, 2200);
+        guitar = new Guitar("Fender", "Parallel Universe II Telecaster", "Magico Trans Surf Green", "Right Hand", 6, 500.00, 1800.00);
+        bassGuitar = new Guitar("Fender", "Player Jazz Bass", "Buttercream", "Left Hand", 4, 250.00, 690.00);
+        guitar1 = new Guitar("Strandberg", "Boden Metal 8", "Black Pearl", "Right Hand", 8,1000.00, 2200.00);
     }
 
     @Test
@@ -49,6 +49,6 @@ public class GuitarTest {
 
     @Test
     public void canGetPrice() {
-        assertEquals(1800, guitar.getPrice(), 0.01);
+        assertEquals(500.00, guitar.getWholesalePrice(), 0.01);
     }
 }
