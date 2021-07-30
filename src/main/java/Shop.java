@@ -44,6 +44,13 @@ public class Shop {
     }
 
 
+    public double getCalculateProfit() {
+        double totalProfit = 0;
+        for (ISell item: stock) {
+            totalProfit += item.calculateMarkUp();
+        }
+        return totalProfit;
+    }
 }
 
 
